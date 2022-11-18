@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="loan">
+  <test  name="personal loan">
+    <classes>
+      <class name="testpackage.day1">
+     <parameter name="URL" value="PERSONAL LOAN.COM"></parameter>
+     <parameter name="USERNAME" value="12345"></parameter>
+  </class>
+      <class name="testpackage.day2"/>
+            <class name="testpackage.day4"/>
+
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="carloan ">
+  <classes>
+  <class name="testpackage.day3">
+  <methods>
+  <exclude name="mobile.*"></exclude>
+  </methods>
+  </class>
+  </classes>
+  </test>
+</suite> <!-- Suite -->
